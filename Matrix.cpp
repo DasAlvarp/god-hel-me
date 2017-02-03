@@ -11,17 +11,19 @@ class Matrix
 	Matrix::Matrix(Vec vector1, Vec vector2, Vec vector3, Vec vector4)
 	{
 		matRows = new Vec[4]{ vector1, vector2, vector3, vector4};
+		getColumns();
 	}
 
+	//creates column for good easy multiplication
 	Vec* getColumns()
 	{
-		for (int x = 0; x < a; x++)
+		matCols = new Vec[4]
 		{
-			for (int y = 0; y < 4; y++)
-			{
-
-			}
-		}
+			Vec(matRows[0].get(0), matRows[1].get(0), matRows[2].get(0), matRows[3].get(0)),
+			Vec(matRows[0].get(1), matRows[1].get(1), matRows[2].get(1), matRows[3].get(1)),
+			Vec(matRows[0].get(2), matRows[1].get(2), matRows[2].get(2), matRows[3].get(2)),
+			Vec(matRows[0].get(3), matRows[1].get(3), matRows[2].get(3), matRows[3].get(3)) 
+		};
 	}
 
 

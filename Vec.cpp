@@ -63,6 +63,11 @@ class Vec
 		}
 	}
 
+	float get(int i)
+	{
+		return values[i];
+	}
+
 	//dot product
 	float dProd(Vec pro)
 	{

@@ -8,6 +8,7 @@ public:
 	Vec multiply(float);
 	float* multiplyA(float);
 	float dProd(Vec);
+	float get(int)
 
 };
 
