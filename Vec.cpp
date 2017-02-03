@@ -1,4 +1,5 @@
 #include "Vec.h"
+#include "Matrix.h"
 #include <cstdarg>
 #include <list>
 #include <iostream>
@@ -63,6 +64,7 @@ class Vec
 		}
 	}
 
+	//returns value of thing
 	float get(int i)
 	{
 		return values[i];
@@ -72,6 +74,12 @@ class Vec
 	float dProd(Vec pro)
 	{
 		return values[0] * pro.values[0] + values[1] * pro.values[1] + values[2] * pro.values[2] + values[3] * pro.values[3];
+	}
+
+	//cross product. This is the one on the left
+	Matrix xprod(Vec right)
+	{
+
 	}
 
 	Vec::~Vec()

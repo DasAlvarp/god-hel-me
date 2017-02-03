@@ -10,7 +10,10 @@ class Matrix
 	//only for 4x4 matrices because I am lazy
 	Matrix::Matrix(Vec vector1, Vec vector2, Vec vector3, Vec vector4)
 	{
-		matRows = new Vec[4]{ vector1, vector2, vector3, vector4};
+		matRows = new Vec[4]
+		{
+			vector1, vector2, vector3, vector4
+		};
 		getColumns();
 	}
 
